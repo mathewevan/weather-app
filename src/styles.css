@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'cta-font';
+    src: url('../public/fonts/Bricolage_Grotesque/static/BricolageGrotesque-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dm-sans-medium';
+    src: url('../public/fonts/DM_Sans/static/DMSans-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'dm-sans-bold';
+    src: url('../public/fonts/DM_Sans/static/DMSans-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dm-sans-italic';
+    src: url('../public/fonts/DM_Sans/static/DMSans-SemiBoldItalic.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dm-sans-semi-bold';
+    src: url('../public/fonts/DM_Sans/static/DMSans-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dm-sans-light';
+    src: url('../public/fonts/DM_Sans/static/DMSans-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'dm-sans-medium', sans-serif;
+}
+
+
+html {
+    background: #02012B;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    font-family: 'cta-font', sans-serif;
+    font-size: 2.5rem;
+}
+
+.logo {
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+.search-bar {
+
+    margin: 50px auto auto;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    padding: 0 10px;
+
+}
+
+.search-button{
+}
+
+.search-input{
+    flex: 1 1 500px;
+    max-width: 400px;
+}
+
+.app-container {
+    display: flex;
+    margin: 50px auto;
+    flex-direction: column;
+    max-width: 900px;
+}
+
+.day-forecast-hero {
+    aspect-ratio: 2.79;
+    display: flex;
+    padding: 20px 20px;
+    flex-direction: row;
+    background: url("../public/images/bg-today-large.svg");
+    background-size: 100% 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    color: white;
+    align-items: center;
+
+}
+
+.day-forecast-hero > :first-child {
+    flex: 1 1 auto;
+}
+
+.main-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.day-forecast-hero-location {
+    font-family: 'dm-sans-bold', sans-serif;
+    font-size: 1.25rem;
+}
+
+.day-forecast-hero-date {
+    color: rgba(255, 255, 255, 0.66);
+    font-size: 0.75rem;
+
+}
+
+.day-forecast-hero-temperature {
+    font-family: 'dm-sans-italic', sans-serif;
+    flex: 0 0 auto;
+    font-size: 3rem;
+
+
+}
+
+.left-column {
+    flex: 3 1 67%;
+}
+
+.right-column {
+    flex: 2 1 33%;
+}
+
+.day-forecast-hero-icon {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.daily-forecast-container {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.daily-forecast-card {
+    background: #25253f;
+    font-family: 'dm-sans-bold', sans-serif;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.66);
+    font-size: 0.75rem;
+    align-items: center;
+    flex: 1 1 auto;
+    padding : 10px 10px;
+}
+
+.daily-forecast-temps {
+    color: rgba(255, 255, 255, 0.66);
+    font-family: 'dm-sans-medium', sans-serif;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.daily-forecast-icon {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.daily-forecast-title {
+    margin-top: 10px;
+    color: white;
+}
+
+.daily-forecast-cards {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.weather-descriptors-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.weather-descriptor-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.weather-descriptor-values {
+    font-family:'dm-sans-light', sans-serif ;
+    color: white;
+    font-size: 1.3rem;
+    display: flex;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.weather-descriptor {
+    display: flex;
+    color: rgba(255, 255, 255, 0.66);
+    font-family: 'dm-sans-medium', sans-serif;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.weather-descriptor-card {
+    background: #25253f;
+    display: flex;
+    border-radius: 6px;
+    flex-direction: column;
+    flex: 1 1 25%;
+    padding : 10px 10px;
+}
